@@ -1,0 +1,25 @@
+{
+  "name": "nodeomatic",
+  "version": "0.0.1",
+  "description": "ftp zip downloader",
+  "main": "app.js",
+  "dependencies": {
+    "should": "~3.2.0-beta1",
+    "bluebird": "~1.1.1",
+    "ftp": "~0.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nerdfury/nodeomatic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerdfury/nodeomatic/issues"
+  },
+  "homepage": "https://github.com/nerdfury/nodeomatic"
+}
