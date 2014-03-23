@@ -10,9 +10,9 @@ var Promise = require('bluebird');
 Promise.promisifyAll(c);
 
 var connectionProperties = {
-    host: "waws-prod-am2-003.ftp.azurewebsites.windows.net",
-    user: "watchr\\jchannon",
-    password: "M4kep3ace79!"
+    host: "",
+    user: "",
+    password: ""
 };
 
 var connect = function () {
