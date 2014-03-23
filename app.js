@@ -76,5 +76,5 @@ var files = function () {
 var data = files();
 
 Promise.all(data.map(function (item) {
-    downloadFiles(item);
+    return downloadFiles(item);
 }));
