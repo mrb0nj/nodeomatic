@@ -1,14 +1,15 @@
 var nodeomatic = require('./lib/nodeomatic');
+var Promise = require('bluebird');
 
 var connectionProperties = {
-    host: "host",
-    user: "user",
-    password: "pass"
+    host: "",
+    user: "",
+    password: ""
 };
 
-nodeomatic.connect(connectionProperties)
+Promise.all(nodeomatic.connect(connectionProperties)
     .then(nodeomatic.list)
-    .filter(nodeomatic.directories)
-    .filter(nodeomatic.files)
-    .map(nodeomatic.download)
+    .then(nodeomatic.getfiles)
+    .map(nodeomatic.download))
+    .then(nodeomatic.signout)
     .done();
